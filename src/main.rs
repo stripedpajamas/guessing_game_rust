@@ -10,7 +10,7 @@ fn main() {
         .expect("Failed to read line :(");
     
     println!("Type h for too high, l for too low, or y if I got it.");
-    let res = match binary_search(0, 10, human_compare) {
+    let res = match binary_search(0, 1000, human_compare) {
         Ok(result) => result,
         Err(_) => return,
     };
